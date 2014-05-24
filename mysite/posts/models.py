@@ -1,4 +1,6 @@
 from django.db import models
+import datetime
+from django.utils import timezone
 
 # Create your models here.
 """
@@ -17,11 +19,11 @@ class Post(models.Model):
   #Posts will have a body with text
   body = models.TextField() #content will be inserted here
 
-  #Posts will have datetimefield when content is published
-  time_created = models.DateTimeField(auto_now_add=True)
+  #Posts will have datetimefield when content is published automatically
+  #time_created = models.DateTimeField(auto_now_add=True)
+
+  #Posts will have user submit datetimefield when making post
+  pub_date = models.DateTimeField('date published')
   def __unicode__(self):
     return self.title
     #read documentation on why we use the above methon in Python 2
-
-  def __unicode__(self):
-    return self.title
