@@ -8,8 +8,8 @@ Each attribute of the model represents a database field.
 
 
 """
-#below defining model the defines Posts
-class Posts(models.Model):
+#below defining model the defines Post
+class Post(models.Model):
 
   #Posts will have a title
   title = models.CharField(max_length=80) #title length 80 characters
@@ -21,11 +21,7 @@ class Posts(models.Model):
   time_created = models.DateTimeField(auto_now_add=True)
   def __unicode__(self):
     return self.title
-    """ This is python 2. It’s important to add __unicode__() methods
-    (or __str__() on Python 3) to your models,not only for your own sanity
-    when dealing with the interactive prompt, but also because objects’
-    representations are used throughout Django’s automatically-generated
-    admin. Python 3 would be different. Info from Django Docs """
+    #read documentation on why we use the above methon in Python 2
 
   def __unicode__(self):
     return self.title
