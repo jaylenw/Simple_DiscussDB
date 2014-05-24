@@ -1,4 +1,4 @@
-Simple Discussion Board
+Simple Discussion Board/Blog
 
 Goal:
 
