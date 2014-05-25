@@ -3,7 +3,7 @@ from django.shortcuts import render
 # Create your views here.
 from django.http import HttpResponse
 from posts.models import Post #Post class in models.py
-
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 def index(request):
     latest_post_list = Post.objects.all().order_by('-pub_date')[:5]
     context = {'latest_post_list':latest_post_list}
