@@ -7,7 +7,7 @@ urlpatterns = patterns('',
     # Examples:
     # url(r'^$', 'mysite.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
-
+    url(r'^$', 'posts.views.index', name='index'),
     url(r'^posts/', include('posts.urls')),
     #routed to posts.urls to show the app, in the case 'posts' content
     url(r'^admin/', include(admin.site.urls)),
