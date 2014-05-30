@@ -1,8 +1,10 @@
 Simple Discussion Board/Blog
+============================
 
 UNDER DEVELOPMENT!
+-------------------
 
-Goal:
+###Goal:
 
 1.  Have administrators post up topics.  Have visitors post comments in response.  
 
