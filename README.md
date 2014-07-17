@@ -13,5 +13,3 @@ UNDER DEVELOPMENT!
 3.  Boom. That's it.  
 
 4.  Work in progress.
-
-5.  settings.py not included, view .gitignore
