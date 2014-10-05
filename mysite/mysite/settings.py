@@ -10,6 +10,11 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
+from django.conf.global_settings import TEMPLATE_CONTEXT_PROCESSORS
+
+TEMPLATE_CONTEXT_PROCESSORS += (
+    'django.core.context_processors.request',) #above 3 lines for endless pagination
+
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 
@@ -36,7 +41,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'posts' #added this because we created this app!
+    'posts', #added this because we created this app!
+    'endless_pagination', #added this to enable endless pagination
 )
 
 MIDDLEWARE_CLASSES = (
