@@ -24,6 +24,8 @@ class Post(models.Model):
 
   #Posts will have user submit datetimefield when making post
   pub_date = models.DateTimeField('date published')
+
+  tag = models.CharField(max_length=30) #Posts will have a tag
   def __unicode__(self):
     return self.title
     #read documentation on why we use the above methon in Python 2
