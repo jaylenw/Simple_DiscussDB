@@ -28,4 +28,4 @@ class Post(models.Model):
   tag = models.CharField(max_length=30) #Posts will have a tag
   def __unicode__(self):
     return self.title
-    #read documentation on why we use the above methon in Python 2
+    #read documentation on why we use the above method in Python 2
