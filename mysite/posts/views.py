@@ -11,6 +11,7 @@ def index(request):
     context = {'latest_post_list':latest_post_list}
     return render(request, 'posts/index.html', context)
     #visitor sees five latest posts
+    #it is the home page
 
 
 def detail(request, post_id):
@@ -19,10 +20,13 @@ def detail(request, post_id):
     except Post.DoesNotExist:
       raise Http404
     return render(request, 'posts/detail.html',{'post':post})
-    #look at comments in views.py
+    #look at comments in views.py to know how to access page
     #visitor visits specific post
+    #specific posts page
 
 def paginator(request):
     paginator_post_list = Post.objects.all()
     context = {'paginator_post_list':paginator_post_list}
     return render(request, 'posts/paginator.html', context)
+    #look at comments in views.py to know how to access page
+    #visitor visits a page with endless lists of posts
