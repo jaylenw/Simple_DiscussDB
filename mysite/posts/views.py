@@ -25,7 +25,8 @@ def detail(request, post_id):
     #specific posts page
 
 def paginator(request):
-    paginator_post_list = Post.objects.all()
+    paginator_post_list = Post.objects.all().order_by('-pub_date')
+    #the feed shall start from latest to oldest from code above
     context = {'paginator_post_list':paginator_post_list}
     return render(request, 'posts/paginator.html', context)
     #look at comments in views.py to know how to access page
