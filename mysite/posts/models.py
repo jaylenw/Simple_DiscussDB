@@ -25,6 +25,9 @@ class Post(models.Model):
   #Posts will have user submit datetimefield when making post
   pub_date = models.DateTimeField('date published')
 
+  #Posts will have author field
+  author = models.CharField(max_length=30)
+
   tag = models.CharField(max_length=30) #Posts will have a tag
   def __unicode__(self):
     return self.title
