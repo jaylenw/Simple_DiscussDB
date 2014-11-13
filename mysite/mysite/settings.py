@@ -41,6 +41,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    #below are apps I added
     'posts', #added this because we created this app!
     'endless_pagination', #added this to enable endless pagination
 )
