@@ -17,4 +17,8 @@ urlpatterns = patterns('',
 
     #so in the url of browser, access
     #the feed by root/posts/feeder
+
+    url(r'^search/', views.search, name="search"),
+    #so in the url of browser, access the search results
+    #by root/posts/search
 )

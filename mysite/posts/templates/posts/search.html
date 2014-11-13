@@ -1,0 +1,9 @@
+{% load search_tags %}
+
+{% search search_query_set title body tag pub_date  %}
+<!--using search_query_set for search app to go through, title body tag
+is the parameters search app is filtering through -->
+
+{% if search_terms %}
+    Searching by {{search_terms}}: <a href="{{remove_search_link}}">Remove</a>
+{% endif %}

@@ -30,3 +30,8 @@ def paginator(request):
     return render(request, 'posts/paginator.html', context)
     #look at comments in views.py to know how to access page
     #visitor visits a page with endless lists of posts
+
+def search(request):
+    search_query_set = Post.objects.all()
+    context = {'search_query_set':search_query_set}
+    return render(request,'posts/search.html', context)
