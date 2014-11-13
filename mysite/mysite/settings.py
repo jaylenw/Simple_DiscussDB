@@ -44,7 +44,8 @@ INSTALLED_APPS = (
 
     #below are apps I added
     'posts', #added this because we created this app!
-    'endless_pagination', #added this to enable endless pagination
+    'endless_pagination', #added this to enable django-endless-pagination
+    'search', #added this for django-search
 )
 
 MIDDLEWARE_CLASSES = (
