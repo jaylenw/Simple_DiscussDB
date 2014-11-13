@@ -46,7 +46,7 @@ INSTALLED_APPS = (
     'posts', #added this because we created this app!
     'endless_pagination', #added this to enable django-endless-pagination
     'search', #added this for django-search
-    'markdown-deux', #added this for markdown format 
+    'markdown_deux', #added this for markdown format 
 )
 
 MIDDLEWARE_CLASSES = (
