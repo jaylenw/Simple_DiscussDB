@@ -1,6 +1,11 @@
 {% load markdown_deux_tags %}
+{% extends "base.html" %}
+
+{% block title %}Simple DiscussDB - {{post.title}} {% endblock %}
 
 <h1>{{post.title}}</h1>
+
+{% block content %}
 
 <p>{{post.body|markdown}}</p>
 <!-- up above code allows text only to be displayed in markdown-->
@@ -10,3 +15,5 @@
 <p>{{post.tag}}</p>
 
 <p>{{post.pub_date}}</p>
+
+{% endblock %}
