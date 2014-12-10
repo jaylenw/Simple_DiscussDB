@@ -1,6 +1,11 @@
+{% extends "base.html" %}
 
+{% block title %}Simple DiscussDB {% endblock %}
+
+{% block content %}
     <ul>
     {% for post in latest_post_list %}
         <li><a href="/posts/{{ post.id }}/">{{ post.title }}</a></li>
     {% endfor %}
     </ul>
+{% endblock %}

@@ -1,4 +1,9 @@
+{% extends "base.html" %}
 {% load endless %}
+
+{% block title %}Simple DiscussDB - Feed {% endblock %}
+
+{% block content %}
 
 {% paginate paginator_post_list %}
 <ul>
@@ -8,3 +13,4 @@
 </ul>
 
 {% show_pages %}
+{% endblock %}
