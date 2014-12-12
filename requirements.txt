@@ -1,6 +1,10 @@
 Django==1.7
 argparse==1.2.1
+django-admin-bootstrapped==2.3.1
+django-easy-timezones==0.2.0
 django-endless-pagination==2.0
 django-markdown-deux==1.0.5
 markdown2==2.3.0
+pygeoip==0.3.2
+pytz==2014.9
 wsgiref==0.1.2
