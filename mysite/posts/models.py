@@ -1,6 +1,7 @@
 from django.db import models
 import datetime
 from django.utils import timezone
+#from django.core.urlresolvers import reverse
 
 # Create your models here.
 """
@@ -29,6 +30,17 @@ class Post(models.Model):
   author = models.CharField(max_length=30)
 
   tag = models.CharField(max_length=30) #Posts will have a tag
+
+  slug = models.SlugField(max_length=120, unique=True)
+  #slugs will be used for nice wordy url lol
+
   def __unicode__(self):
     return self.title
     #read documentation on why we use the above method in Python 2
+
+  @models.permalink
+  def get_absolute_url(self):
+    return ('detail', (),{
+    'slug': self.slug,
+    'post_id': self.id,
+    })

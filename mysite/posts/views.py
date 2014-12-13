@@ -14,15 +14,17 @@ def index(request):
     #it is the home page
 
 
-def detail(request, post_id):
+def detail(request, slug, post_id):
     try:
       post = Post.objects.get(pk=post_id)
+      #post = Post.objects.get(pk=post_id)
     except Post.DoesNotExist:
       raise Http404
     return render(request, 'posts/detail.html',{'post':post})
     #look at comments in views.py to know how to access page
     #visitor visits specific post
     #specific posts page
+
 
 def paginator(request):
     paginator_post_list = Post.objects.all().order_by('-pub_date')
