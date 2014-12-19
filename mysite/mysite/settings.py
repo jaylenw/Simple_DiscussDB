@@ -18,6 +18,7 @@ SETTINGS_DIR = os.path.dirname(__file__)
 PROJECT_PATH = os.path.join(SETTINGS_DIR, os.pardir)
 PROJECT_PATH = os.path.abspath(PROJECT_PATH)
 TEMPLATE_PATH = os.path.join(PROJECT_PATH, 'templates')
+MEDIA_PATH = os.path.join(PROJECT_PATH, 'media')
 #the above 4 lines to have django get our directories for us.
 #we are determining paths to templates
 #makes it more portable

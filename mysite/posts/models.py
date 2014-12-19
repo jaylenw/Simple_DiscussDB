@@ -31,6 +31,10 @@ class Post(models.Model):
   #Posts will have quick summary field
   synopsis = models.TextField()
 
+  #Adding image field for admins to upload picture to post
+  image = models.ImageField("Post Image", upload_to="MEDIA_PATH/", blank=True, null=True)
+
+
   tag = models.CharField(max_length=30) #Posts will have a tag
   def __unicode__(self):
     return self.title
