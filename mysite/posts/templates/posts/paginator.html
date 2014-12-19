@@ -8,7 +8,7 @@
 {% paginate paginator_post_list %}
 <ul>
 {% for post in paginator_post_list %}
-    <li><a href="/posts/{{ post.id }}/">{{ post.title }}</a></li>
+    <li><a href="{% url 'posts:paginator' slug=post.slug %}">{{ post.title }}</a></li>
 {% endfor %}
 </ul>
 

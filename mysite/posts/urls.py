@@ -6,7 +6,7 @@ urlpatterns = patterns('',
     #ex: /posts/
     #ex: /posts/5/
     #url(r'^(?P<post_id>\d+)/$', views.detail, name='detail'),
-    url(r'^(?P<slug>[-\w\d]+),(?P<post_id>\d+)/$', views.detail, name='detail'),
+    url(r'(?P<slug>[\w-]+)', views.detail, name='detail'),
 
 
     #so in the url of browser, to acess specific post, root/posts/x/, where

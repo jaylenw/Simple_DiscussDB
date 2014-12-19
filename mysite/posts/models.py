@@ -37,10 +37,3 @@ class Post(models.Model):
   def __unicode__(self):
     return self.title
     #read documentation on why we use the above method in Python 2
-
-  @models.permalink
-  def get_absolute_url(self):
-    return ('detail', (),{
-    'slug': self.slug,
-    'post_id': self.id,
-    })

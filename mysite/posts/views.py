@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 
 # Create your views here.
 from django.http import HttpResponse
@@ -14,13 +14,19 @@ def index(request):
     #it is the home page
 
 
-def detail(request, slug, post_id):
-    try:
-      post = Post.objects.get(pk=post_id)
+def detail(request, slug, *args, **kwargs ):
+
+    mypost = get_object_or_404(Post, slug=slug)
+    context = {'mypost':mypost,}
+    return render(request, 'posts/detail.html', context)
+
+    #my old method below
+    #try:
+    # post = Post.objects.get(pk=post_id)
       #post = Post.objects.get(pk=post_id)
-    except Post.DoesNotExist:
-      raise Http404
-    return render(request, 'posts/detail.html',{'post':post})
+    #except Post.DoesNotExist:
+    #  raise Http404
+    #return render(request, 'posts/detail.html',{'post':post})
     #look at comments in views.py to know how to access page
     #visitor visits specific post
     #specific posts page
