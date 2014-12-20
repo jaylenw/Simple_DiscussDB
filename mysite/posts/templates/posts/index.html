@@ -5,7 +5,7 @@
 {% block content %}
     <ul>
     {% for post in latest_post_list %}
-        <li><a href="/posts/{{ post.id }}/">{{ post.title }}</a>
+        <li><a href="/posts/{{ post.id }}/{{post.slug}}">{{ post.title }}</a>
         <p>{{post.synopsis}}</p>
         </li>
     {% endfor %}
