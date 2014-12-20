@@ -32,6 +32,9 @@ class Post(models.Model):
   synopsis = models.TextField()
 
   tag = models.CharField(max_length=30) #Posts will have a tag
+
+  image = models.ImageField("Posts Image", upload_to="MEDIA_ROOT", blank=True, null=True)
+  
   def __unicode__(self):
     return self.title
     #read documentation on why we use the above method in Python 2
