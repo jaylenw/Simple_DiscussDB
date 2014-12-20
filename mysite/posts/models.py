@@ -31,10 +31,13 @@ class Post(models.Model):
   #Posts will have quick summary field
   synopsis = models.TextField()
 
+  #Posts will have tag field
   tag = models.CharField(max_length=30) #Posts will have a tag
 
+  #Posts will have slug field, will be used in url for user
   slug = models.SlugField(max_length=120, unique=True)
 
+  #Posts will have image uploaded for user for post image
   image = models.ImageField("Posts Image", upload_to="MEDIA_ROOT", blank=True, null=True)
 
   def __unicode__(self):

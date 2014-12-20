@@ -9,6 +9,7 @@ urlpatterns = patterns('',
 
     #so in the url of browser, to acess specific post, root/posts/x/, where
     #x is the number (id) refering to the post
+    #[\s\S]* catches every, our post.slug hits this
 
 
     #the above url is using regex expressions talking to
