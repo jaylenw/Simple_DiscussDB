@@ -8,20 +8,22 @@
 {% paginate paginator_post_list %}
 
 
-
+<div class="ourpaginatorspace">
 <div class="row">
   <div class="large-12 columns">
     <article>
 
       <ul>
         {% for post in paginator_post_list %}
-        <li><a href="/posts/{{ post.id }}/{{post.slug}}">{{ post.title }}</a>
+        <li><div class="ourtitle"><a href="/posts/{{ post.id }}/{{post.slug}}">{{ post.title }}</a></div>
           <p>{{post.synopsis}}</p>
+          <div class="ourtags"><p>{{post.tag}}<p></div>
         </li>
         {% endfor %}
       </ul>
     </article>
   </div>
+</div>
 </div>
 
 <div class="pagination-centered">

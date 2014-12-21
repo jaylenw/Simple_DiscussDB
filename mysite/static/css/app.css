@@ -23,4 +23,34 @@
   padding: 50px;
   font-size: 20px;
   background-color: #fff;
-}              
+}
+
+.ourtags p {
+
+  color: orange;
+  font-style: italic;
+
+}
+
+.ourtitle a {
+
+  font-weight: bold;
+
+}
+
+.ourauthor{
+
+
+}
+
+.ourimage {
+
+  padding-top: auto;
+  padding-bottom: auto;
+
+}
+
+.ourpaginatorspace {
+
+  padding-top: 100px;
+}

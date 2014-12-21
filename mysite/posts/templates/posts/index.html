@@ -6,7 +6,7 @@
 
 <div class="parallax-background">
   <div class="intro-text">
-    This is our discussion Board!
+    This is our Blog/Discussion Board!
     <p><i class="fi-arrow-down"></i></p>
   </div>
 </div>
@@ -18,9 +18,9 @@
   <div class="large-12 columns">
   <ul>
     {% for post in latest_post_list %}
-    <li><a href="/posts/{{ post.id }}/{{post.slug}}">{{ post.title }}</a>
+    <li><div class="ourtitle"><a href="/posts/{{ post.id }}/{{post.slug}}">{{ post.title }}</a></div>
       <p>{{post.synopsis}}</p>
-      <p>{{post.tag}}<p>
+      <div class="ourtags"><p>{{post.tag}}<p></div>
     </li>
     {% endfor %}
   </ul>
