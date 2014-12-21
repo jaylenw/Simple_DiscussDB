@@ -3,11 +3,32 @@
 {% block title %}Simple DiscussDB {% endblock %}
 
 {% block content %}
-    <ul>
+
+<div class="parallax-background">
+  <div class="intro-text">
+    This is our discussion Board!
+    <p><i class="fi-arrow-down"></i></p>
+  </div>
+</div>
+
+<div class="parallax-content">
+
+<div class="row">
+
+  <div class="large-12 columns">
+  <ul>
     {% for post in latest_post_list %}
-        <li><a href="/posts/{{ post.id }}/{{post.slug}}">{{ post.title }}</a>
-        <p>{{post.synopsis}}</p>
-        </li>
+    <li><a href="/posts/{{ post.id }}/{{post.slug}}">{{ post.title }}</a>
+      <p>{{post.synopsis}}</p>
+      <p>{{post.tag}}<p>
+    </li>
     {% endfor %}
-    </ul>
+  </ul>
+
+</div>
+
+</div>
+
+
+
 {% endblock %}

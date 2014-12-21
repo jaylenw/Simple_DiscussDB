@@ -7,17 +7,28 @@
 
 {% block content %}
 
-<h1>{{post.title}}</h1>
-
-<img src="/media/{{post.image}}"
-
-<p>{{post.body|markdown}}</p>
-<!-- up above code allows text only to be displayed in markdown-->
-
-<p>{{post.author}}</p>
-
-<p>{{post.tag}}</p>
 
 
+
+
+
+
+
+<div class="row">
+  <div class="large-12 columns">
+    <article>
+
+      <h1>{{post.title}}</h1>
+      <h6>Written by {{post.author}}</h6>
+      <img src="/media/{{post.image}}"
+
+      <p>{{post.body|markdown}}</p>
+      <!-- up above code allows text only to be displayed in markdown-->
+
+      <p>{{post.tag}}</p>
+
+    </article>
+  </div>
+</div>
 
 {% endblock %}

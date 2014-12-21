@@ -6,13 +6,27 @@
 {% block content %}
 
 {% paginate paginator_post_list %}
-<ul>
-{% for post in paginator_post_list %}
-    <li><a href="/posts/{{ post.id }}/">{{ post.title }}</a>
-      <p>{{post.synopsis}}</p>
-    </li>
-{% endfor %}
-</ul>
 
+
+
+<div class="row">
+  <div class="large-12 columns">
+    <article>
+
+      <ul>
+        {% for post in paginator_post_list %}
+        <li><a href="/posts/{{ post.id }}/{{post.slug}}">{{ post.title }}</a>
+          <p>{{post.synopsis}}</p>
+        </li>
+        {% endfor %}
+      </ul>
+    </article>
+  </div>
+</div>
+
+<div class="pagination-centered">
+  <ul class="pagination">
 {% show_pages %}
+  </ul>
+</div>
 {% endblock %}
