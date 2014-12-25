@@ -204,3 +204,7 @@ run,
 13. In an event you need to kill gunicorn, run,
 
         pkill gunicorn
+
+14. Last but not least!  Your visitors need a way to comment!  Follow Disqus
+    instructions on how to add Disqus comments to your site.  You should be able
+    to embed code to detail.html.
