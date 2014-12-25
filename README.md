@@ -119,7 +119,7 @@ run,
 6.  The following instructions can now be done in multiple ways, but of course this
     is one way.
 
-7.  Make sure django_collected_static folder is in same directory as manage.py
+7.  Make sure django_collected_static folder is in same directory as manage.py.
     Copy admin, bootstrap, and endless_pagination folders from djangoe_collected_static
     into your static folder.
 
@@ -203,4 +203,4 @@ run,
 
 13. In an event you need to kill gunicorn, run,
 
-      pkill gunicorn
+        pkill gunicorn
