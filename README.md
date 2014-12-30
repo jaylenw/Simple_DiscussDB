@@ -11,7 +11,9 @@ Simple Discussion Board/Blog
 
 4.  View video below to see a demo of Simple DiscussDB.
 
-    [Simple DiscussDB Video](http://www.youtube.com/embed/azxvbZJ1waQ)
+    [Simple DiscussDB Video](http://youtu.be/azxvbZJ1waQ)
+
+5.  Pull Requests & Issues are welcomed.
 
 
 ##Running in Test Environment:
@@ -50,16 +52,16 @@ Assuming running on GNU/Linux
 
         django-admin startproject oursite
 
-    this created our new site and project.  You should see an oursite directory.
+    this created our new site and project.  You should see an 'oursite' directory.
 
 8.  In the repository you downloaded our project site is called mysite, for us it is called
     oursite.  This is the time where you compare, copy, and make additions to the
-    files in our oursite directory.  Note: don't replace anything that says oursite
+    files in our 'oursite' directory.  Note: don't replace anything that says oursite
     to our site, just use the repository's code as guide for changes you must make to
     oursite.
 
 9.  Lets now get this site fired up.  We will be creating our database and a
-    super user we can use to login to the admin portion of site. cd into oursite
+    super user we can use to login to the admin portion of site. cd into 'oursite'
     directory.  You should now see a file that says manage.py.  Run in that directory,
 
         python manage.py migrate
@@ -95,7 +97,7 @@ run,
     Gunicorn is a Python WSGI HTTP server will be using in replacing Django's
     built in development server.
 
-3.  In settings.py of oursite, add the line,
+3.  In settings.py of 'oursite', add the line,
 
         STATIC_ROOT = os.path.join(PROJECT_PATH,'django_collected_static')
 
@@ -178,7 +180,7 @@ run,
 11. If you have your domain name pointing to your server, entering it to the address
     bar should result in your Djanog site!  Congratulations! :)
 
-12. To make your life easier, and don't want to start you django site manuelly
+12. To make your life easier, and don't want to start you django site manually
     after server reboots, create a bash script.  Lets name it startdjango.sh . In it add,
 
         #!/bin/bash
@@ -211,4 +213,4 @@ run,
 
 14. Last but not least!  Your visitors need a way to comment!  Follow Disqus
     instructions on how to add Disqus comments to your site.  You should be able
-    to embed code to detail.html.
+    to embed code to the file detail.html.
