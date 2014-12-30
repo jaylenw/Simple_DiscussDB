@@ -9,6 +9,10 @@ Simple Discussion Board/Blog
 
 3.  Boom. That's it.  
 
+4.  View video below to see a demo of Simple DiscussDB
+
+<iframe width="560" height="315" src="//www.youtube.com/embed/azxvbZJ1waQ" frameborder="0" allowfullscreen></iframe>
+
 
 ##Running in Test Environment:
 
