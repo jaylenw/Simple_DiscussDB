@@ -178,7 +178,7 @@ run,
     Gunicorn should be running, and now we are all set!
 
 11. If you have your domain name pointing to your server, entering it to the address
-    bar should result in your Djanog site!  Congratulations! :)
+    bar should result in your Django site!  Congratulations! :)
 
 12. To make your life easier, and don't want to start you django site manually
     after server reboots, create a bash script.  Lets name it startdjango.sh . In it add,
