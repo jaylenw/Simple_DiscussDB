@@ -9,9 +9,10 @@ Simple Discussion Board/Blog
 
 3.  Boom. That's it.  
 
-4.  View video below to see a demo of Simple DiscussDB
+4.  View video below to see a demo of Simple DiscussDB.
 
-[[youtube-{azxvbZJ1waQ}-{560}x{315}]]
+    [Simple DiscussDB Video](http://www.youtube.com/embed/azxvbZJ1waQ)
+
 
 ##Running in Test Environment:
 
