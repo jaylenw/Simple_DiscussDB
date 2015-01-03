@@ -1,7 +1,7 @@
 Simple Discussion Board/Blog
 ============================
 
-###Goal:
+##Goal:
 
 1.  Have administrators post up topics.  Have visitors post comments with Disqus.  
 
@@ -14,6 +14,20 @@ Simple Discussion Board/Blog
     [Simple DiscussDB Video](http://youtu.be/azxvbZJ1waQ)
 
 5.  Pull Requests & Issues are welcomed.
+
+
+
+##Features:
+
+* Markdown Support for body field.
+
+* Easy upload of images for posts.
+
+* Simple Administration (Create, Add, Delete Users & Posts).
+
+* Mobile Friendly.
+
+* Easy theme color customization (change, add, delete css properties in app.css).
 
 
 ##Running in Test Environment:
@@ -126,7 +140,7 @@ run,
     is one way.
 
 7.  Make sure django_collected_static folder is in same directory as manage.py.
-    Copy admin, bootstrap, and endless_pagination folders from djangoe_collected_static
+    Copy admin, bootstrap, and endless_pagination folders from django_collected_static
     into your static folder.
 
 
