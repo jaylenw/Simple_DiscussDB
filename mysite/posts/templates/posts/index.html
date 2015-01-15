@@ -19,10 +19,10 @@
   <div class="large-12 columns">
   <ul>
     {% for post in latest_post_list %}
-    <li><div class="ourtitle"><a href="/posts/{{ post.id }}/{{post.slug}}">{{ post.title }}</a></div>
+    <section><div class="ourtitle"><a href="/posts/{{ post.id }}/{{post.slug}}">{{ post.title }}</a></div>
       <p>{{post.synopsis}}</p>
       <div class="ourtags"><p>{{post.tag}}<p></div>
-    </li>
+    </section>
     {% endfor %}
   </ul>
 
