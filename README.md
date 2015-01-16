@@ -38,6 +38,8 @@ Assuming running on GNU/Linux
 
 2.  Globally, need to have python-dev (debian specific) and python-setuptools, python-pip installed.
 
+        sudo apt-get install python-pip build-essential python-dev python-setuptools
+
 3.  Creating a directory for our project and then cd into it.
 
 4.  In our new directory, run
