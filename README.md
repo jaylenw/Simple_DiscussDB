@@ -72,9 +72,10 @@ Assuming running on GNU/Linux
 
 8.  In the repository you downloaded our project site is called mysite, for us it is called
     oursite.  This is the time where you compare, copy, and make additions to the
-    files in our 'oursite' directory.  Note: don't replace anything that says oursite
-    to our site, just use the repository's code as guide for changes you must make to
-    oursite.
+    files in our 'oursite' directory.  Note: don't replace anything that says mysite
+    to 'oursite', just use the repository's code as guide for changes you must make to
+    'oursite'.  You should be able to safely copy everything but the settings.py file
+    for security reasons.  
 
 9.  Lets now get this site fired up.  We will be creating our database and a
     super user we can use to login to the admin portion of site. cd into 'oursite'
