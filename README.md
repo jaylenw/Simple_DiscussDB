@@ -75,7 +75,10 @@ Assuming running on GNU/Linux
     files in our 'oursite' directory.  Note: don't replace anything that says mysite
     to 'oursite', just use the repository's code as guide for changes you must make to
     'oursite'.  You should be able to safely copy everything but the settings.py file
-    for security reasons.  
+    for security reasons.  You will then compare and copy the necessary lines of code
+    to your settings.py file in 'oursite'.  Don't change the 'oursite' security key.
+    Make sure you have the url patterns correct under oursite/urls.py, compare with
+    mysite/urls.py.
 
 9.  Lets now get this site fired up.  We will be creating our database and a
     super user we can use to login to the admin portion of site. cd into 'oursite'
@@ -109,7 +112,7 @@ run,
 
 2.  Run,
 
-        sudo pip install gunicorn
+        pip install gunicorn
 
     Gunicorn is a Python WSGI HTTP server will be using in replacing Django's
     built in development server.
@@ -156,7 +159,7 @@ run,
 
             listen 80;  #listening on port 80
             server_name example.com; #our domain name
-            root path; #path to your project, should see static folder
+            root path; #path to your project, should see env folder
             keepalive_timeout 5;
         #to serve to proxy, gunicorn that is running on port 8000;
             location / {
