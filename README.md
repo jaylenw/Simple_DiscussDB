@@ -252,3 +252,30 @@ run,
 
       Information on Disqus Universal Embed Code can be found here
       [Embed Code Installation Instructions](https://help.disqus.com/customer/portal/articles/472097-universal-embed-code)
+
+
+--------------------------------------------------------------------------------
+
+Below is an example of css tags that you may want to add to app.css to
+quickly customize the finer parts of Simple DiscussDB.  Change to where you see
+fit! :)
+
+        body {
+          background: #32303D;
+          color: #green;
+        }
+
+        h1, h2, h3 {
+          color: red;
+        }
+
+        h4 {
+          color:#fff;
+          } /* used by author in detail.html*/
+
+        .reveal-modal, dialog { /* customize the drop down menu*/
+
+          background: #32303D;
+          color: #fff;
+
+        }
