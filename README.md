@@ -37,6 +37,7 @@ Simple Discussion Board/Blog
 ![](https://raw.githubusercontent.com/jaylenw/Simple_DiscussDB/screenshots/screenshot4.png)
 ![](https://raw.githubusercontent.com/jaylenw/Simple_DiscussDB/screenshots/screenshot5.png)
 ![](https://raw.githubusercontent.com/jaylenw/Simple_DiscussDB/screenshots/screenshot6.png)
+![](https://raw.githubusercontent.com/jaylenw/Simple_DiscussDB/screenshots/screenshot7.png)
 
 
 ##Running in Test Environment:
