@@ -29,6 +29,16 @@ Simple Discussion Board/Blog
 
 * Easy theme color customization (change, add, delete css properties in app.css).
 
+##Screenshots
+
+![](https://raw.githubusercontent.com/jaylenw/Simple_DiscussDB/screenshots/screenshot1.png)
+![](https://raw.githubusercontent.com/jaylenw/Simple_DiscussDB/screenshots/screenshot2.png)
+![](https://raw.githubusercontent.com/jaylenw/Simple_DiscussDB/screenshots/screenshot3.png)
+![](https://raw.githubusercontent.com/jaylenw/Simple_DiscussDB/screenshots/screenshot4.png)
+![](https://raw.githubusercontent.com/jaylenw/Simple_DiscussDB/screenshots/screenshot5.png)
+![](https://raw.githubusercontent.com/jaylenw/Simple_DiscussDB/screenshots/screenshot6.png)
+![](https://raw.githubusercontent.com/jaylenw/Simple_DiscussDB/screenshots/screenshot7.png)
+
 
 ##Running in Test Environment:
 
