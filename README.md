@@ -1,7 +1,7 @@
 Simple Discussion Board/Blog
 ============================
 
-##Goal:
+## Goal:
 
 1.  Have administrators post up topics.  Have visitors post comments with Disqus.  
 
@@ -17,7 +17,7 @@ Simple Discussion Board/Blog
 
 
 
-##Features:
+## Features:
 
 * Markdown Support for body field.
 
@@ -29,7 +29,7 @@ Simple Discussion Board/Blog
 
 * Easy theme color customization (change, add, delete css properties in app.css).
 
-##Screenshots
+## Screenshots
 
 ![](https://raw.githubusercontent.com/jaylenw/Simple_DiscussDB/screenshots/screenshot1.png)
 ![](https://raw.githubusercontent.com/jaylenw/Simple_DiscussDB/screenshots/screenshot2.png)
@@ -40,7 +40,7 @@ Simple Discussion Board/Blog
 ![](https://raw.githubusercontent.com/jaylenw/Simple_DiscussDB/screenshots/screenshot7.png)
 
 
-##Running in Test Environment:
+## Running in Test Environment:
 
 Assuming running on GNU/Linux
 
@@ -116,7 +116,7 @@ run,
         python manage.py migrate
 
 
-##Running in Production:
+## Running in Production:
 
 1.  Assuming you have done the steps above!
 
