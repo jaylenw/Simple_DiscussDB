@@ -1,4 +1,4 @@
-#Simple DiscussDB
+# Simple DiscussDB
 
 The MIT License (MIT)
 
@@ -24,7 +24,7 @@ THE SOFTWARE.
 
 --------------------------------------------------------------------------------
 
-#Django
+# Django
 
 Copyright (c) Django Software Foundation and individual contributors.
 
@@ -54,7 +54,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 --------------------------------------------------------------------------------
 
-#Django-easy-timezones
+# Django-easy-timezones
 
 Apache License
 Version 2.0, January 2004
@@ -250,7 +250,7 @@ shall not include works that remain separable from, or merely link (or bind by
 
 --------------------------------------------------------------------------------
 
-#Django-admin-bootstrapped
+# Django-admin-bootstrapped
 
 Apache License
 Version 2.0, January 2004
@@ -415,7 +415,7 @@ institute patent litigation against any entity (including a
 
 --------------------------------------------------------------------------------
 
-#Django Markdown Deux
+# Django Markdown Deux
 
 ## This is the MIT license
 
@@ -442,7 +442,7 @@ copy of this software and associated documentation files (the
 
 --------------------------------------------------------------------------------
 
-#Python-markdown2
+# Python-markdown2
 
 This implementation of Markdown is licensed under the MIT License:
 The MIT License
@@ -491,25 +491,25 @@ copy of this software and associated documentation files (the
 
 --------------------------------------------------------------------------------
 
-#Pygeoip
+# Pygeoip
 
 License: LGPLv3+
 
 --------------------------------------------------------------------------------
 
-#Pytz
+# Pytz
 
 License: MIT
 
 --------------------------------------------------------------------------------
 
-#Wsgiref
+# Wsgiref
 
 License: PSF or ZPL
 
 --------------------------------------------------------------------------------
 
-#Foundation
+# Foundation
 
 Copyright (c) 2013-2014 ZURB, inc.
 MIT License
